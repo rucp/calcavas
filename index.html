@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Adicionada meta tag de viewport -->
     <title>Calculadora de Soma</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
         }
+
         .container {
             max-width: 400px;
             margin: 0 auto;
@@ -15,15 +18,18 @@
             border-radius: 5px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
+
         label {
             display: block;
             margin-bottom: 5px;
         }
+
         input {
             width: 100%;
             padding: 5px;
             margin-bottom: 10px;
         }
+
         button {
             width: 100%;
             padding: 10px;
@@ -33,11 +39,22 @@
             border-radius: 5px;
             cursor: pointer;
         }
+
         button:hover {
             background-color: #0056b3;
         }
+
+        .data {
+            margin: 20px auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Calculadora AVAS</h1>
@@ -59,6 +76,18 @@
             <button type="button" onclick="calculateTotal()">Calcular</button>
         </form>
         <p>Total: <span id="total">0</span></p>
+
+
+    </div>
+
+    <div class="data">
+        <p><strong>Português:</strong> sem anulações</p>
+        <p><strong>LODF:</strong> sem anulações</p>
+        <p><strong>SUS:</strong> uma anulação</p>
+        <p><strong>Matemática:</strong> sem anulações</p>
+        <p><strong>PDPM:</strong> uma anulação</p>
+        <p><strong>Informática:</strong> sem anulações</p>
+        <p><strong>Questões específicas:</strong> duas anulações</p>
     </div>
 
     <script>
@@ -77,4 +106,5 @@
         }
     </script>
 </body>
+
 </html>
